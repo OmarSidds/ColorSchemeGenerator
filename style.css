@@ -1,0 +1,45 @@
+#container {
+    border: red solid 2px;
+    width: 550px;
+    height: 550px;
+}
+
+#head {
+    border: solid black 2px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#colorInput {
+    height: 42px;
+    width: 61px;
+}
+
+#selectBox {
+    width: 312px;
+    margin: 0 8px;
+    font-weight: 400;
+}
+
+#getColorBtn {
+    width: 123px;
+    background-color: #FFFFFF;
+}
+
+#getColorBtn:hover {
+    background-color: lightgray;
+}
+
+#selectBox, #getColorBtn {
+    height: 42px;
+    border-radius: 6px;
+    border: 1px #D1D5DB solid; 
+}
+
+#getColorBtn:hover, 
+#selectBox:hover,
+#colorInput {
+    cursor: pointer;
+}
