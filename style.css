@@ -1,11 +1,16 @@
-#container {
-    border: red solid 2px;
-    width: 550px;
-    height: 550px;
+body {
+    background-color: lightgray;
 }
 
+#container {
+    width: 550px;
+    height: 550px;
+    margin: 50px auto;
+}
+
+/* Head */
 #head {
-    border: solid black 2px;
+    background-color: #FFFFFF;
     height: 90px;
     display: flex;
     align-items: center;
@@ -42,4 +47,43 @@
 #selectBox:hover,
 #colorInput {
     cursor: pointer;
+}
+
+/* Body of colors */
+
+#body {
+    display: flex;
+    height: 75%;
+}
+
+#colorBlock1,
+#colorBlock2,
+#colorBlock3,
+#colorBlock4,
+#colorBlock5 {
+    width: 110px;
+}
+
+#colorBlock1 {
+}
+
+#colorBlock2 {
+}
+
+#colorBlock3 {
+}
+
+#colorBlock4 {
+}
+
+#colorBlock5 {
+}
+
+/* Bottom Hex code */
+
+.hexCode {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FFFFFF;
 }
