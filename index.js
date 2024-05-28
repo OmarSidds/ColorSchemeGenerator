@@ -23,14 +23,19 @@ getColorBtn.addEventListener('click', function(){
       return response.json();
     })
     .then(data => {
-        console.log(data)
-        // console.log(data.colors[0].hex.value)
 
         document.getElementById("colorBlock1").style.backgroundColor = data.colors[0].hex.value
         document.getElementById("colorBlock2").style.backgroundColor = data.colors[1].hex.value
         document.getElementById("colorBlock3").style.backgroundColor = data.colors[2].hex.value
         document.getElementById("colorBlock4").style.backgroundColor = data.colors[3].hex.value
         document.getElementById("colorBlock5").style.backgroundColor = data.colors[4].hex.value
+
+        document.getElementById("colorBlock1Hex").innerText = data.colors[0].hex.value
+        document.getElementById("colorBlock2Hex").innerText = data.colors[1].hex.value
+        document.getElementById("colorBlock3Hex").innerText = data.colors[2].hex.value
+        document.getElementById("colorBlock4Hex").innerText = data.colors[3].hex.value
+        document.getElementById("colorBlock5Hex").innerText = data.colors[4].hex.value
+
     })
     .catch(error => {
       console.error('Fetch error:', error);

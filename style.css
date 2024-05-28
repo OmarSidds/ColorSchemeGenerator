@@ -6,11 +6,11 @@ body {
     width: 550px;
     height: 550px;
     margin: 50px auto;
+    background-color: #FFFFFF;
 }
 
 /* Head */
 #head {
-    background-color: #FFFFFF;
     height: 90px;
     display: flex;
     align-items: center;
@@ -85,5 +85,4 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #FFFFFF;
 }
